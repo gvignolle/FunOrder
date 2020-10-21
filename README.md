@@ -48,7 +48,6 @@ After R, Perl and Python is installed, install the ete2 package.
 
 ```
 pip install ete2
-
 ```
 
 Now install the R packages if not already installed.
@@ -87,14 +86,12 @@ Alternativeley you can call the FunOrder/pipeline directory directly.
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder.sh [Thread number] [gbk file] [outputdirectory] [database]
-
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
 sh funorder.sh [Thread number] [gbk file] [outputdirectory] [database]
-
 ```
 
 following folders will be created in the chosen outputdirectory:
@@ -122,14 +119,12 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
-
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
 sh funorder_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
-
 ```
 
 following folders will be created in the chosen outputdirectory:
@@ -156,14 +151,12 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder_server.sh [Thread number] [gbk file] [outputdirectory] [database]
-
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
 sh funorder_server.sh [Thread number] [gbk file] [outputdirectory] [database]
-
 ```
 
 following folders will be created in the chosen outputdirectory:
@@ -190,14 +183,12 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder_server_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
-
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
 sh funorder_server_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
-
 ```
 
 following folders will be created in the chosen outputdirectory:
