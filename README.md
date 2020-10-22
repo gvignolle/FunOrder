@@ -83,7 +83,7 @@ Alternativeley you can call the FunOrder/pipeline directory directly.
 
 
 
-### 1: using FunOrder in default mode with Genbank files
+### 1) using FunOrder in default mode with Genbank files
 
 
 ```
@@ -115,7 +115,7 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-### 2: using FunOrder in default mode with fasta files
+### 2) using FunOrder in default mode with fasta files
 
 
 ```
@@ -147,7 +147,7 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-### 3: using FunOrder in server mode with gbk files
+### 3) using FunOrder in server mode with gbk files
 
 
 ```
@@ -178,7 +178,7 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-### 4: using FunOrder in server mode with fasta files
+### 4) using FunOrder in server mode with fasta files
 
 
 ```
