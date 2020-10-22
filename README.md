@@ -83,8 +83,9 @@ Alternativeley you can call the FunOrder/pipeline directory directly.
 
 
 
-### 1) using FunOrder in default mode with Genbank files
 
+### 1) using FunOrder in default mode with Genbank files
+------------
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder.sh [Thread number] [gbk file] [outputdirectory] [database]
@@ -115,8 +116,9 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-### 2) using FunOrder in default mode with fasta files
 
+### 2) using FunOrder in default mode with fasta files
+------------
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
@@ -147,8 +149,9 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-### 3) using FunOrder in server mode with gbk files
 
+### 3) using FunOrder in server mode with gbk files
+------------
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder_server.sh [Thread number] [gbk file] [outputdirectory] [database]
@@ -178,8 +181,9 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-### 4) using FunOrder in server mode with fasta files
 
+### 4) using FunOrder in server mode with fasta files
+------------
 
 ```
 sh ~/path/to/directory/funorder_v1/funorder_server_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
