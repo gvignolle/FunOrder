@@ -104,7 +104,7 @@ following folders will be created in the chosen outputdirectory:
 3. file.gbk.analysis/hits
 
 The output of the optional BLAST analysis is saved in the /file.gbk.analysis directory.
-The output of FunOrder is saved in /file.gbk.analysis/alignment 
+The output of FunOrder is saved in /file.gbk.analysis/alignment
 
 #### Output files produced by funorder.sh
 
@@ -137,7 +137,7 @@ following folders will be created in the chosen outputdirectory:
 3. file.fasta.analysis/hits
 
 The output of the optional BLAST analysis is saved in the /file.gbk.analysis directory.
-The output of FunOrder is saved in /file.fasta.analysis/alignment 
+The output of FunOrder is saved in /file.fasta.analysis/alignment
 
 #### Output files produced by funorder_fasta_only.sh
 
@@ -169,7 +169,7 @@ following folders will be created in the chosen outputdirectory:
 2. file.gbk.analysis/alignment
 3. file.gbk.analysis/hits
 
-The output of FunOrder is saved in /file.gbk.analysis/alignment 
+The output of FunOrder is saved in /file.gbk.analysis/alignment
 
 #### Output files produced by funorder.sh
 
@@ -201,7 +201,7 @@ following folders will be created in the chosen outputdirectory:
 2. file.fasta.analysis/alignment
 3. file.fasta.analysis/hits
 
-The output of FunOrder is saved in /file.fasta.analysis/alignment 
+The output of FunOrder is saved in /file.fasta.analysis/alignment
 
 #### Output files produced by funorder_fasta_only.sh
 
