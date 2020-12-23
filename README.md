@@ -5,7 +5,7 @@ The Functional Order (FunOrder) tool - Identification of essential biosynthetic 
 
 The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution. FunOrder is copyright 2020 Gabriel A. Vignolle, Robert L. Mach, Astrid R. Mach-Aigner and Christian Derntl, and is released under the MIT License. If you find FunOrder useful to your work, please cite:
 
-Vignolle, G. A.; Mach, R. L.; Mach-Aigner, A. R.; Derntl, C. The Functional Order (FunOrder) tool: Identification of essential biosynthetic genes through computational molecular co-evolution. **submitted to** *Nucleic Acids Research*, **2020**.  **unpublished**
+Vignolle, G. A.; Mach, R. L.; Mach-Aigner, A. R.; Derntl, C. The Functional Order (FunOrder) tool: Identification of essential biosynthetic genes through computational molecular co-evolution. **submitted to** *Nucleic Acids Research*, **2021**.  **unpublished**
 
 
 The software input files are biosynthetic gene clusters (BGC) with gene translations in genbank file format or fasta format, that contain the amino acid sequences of all the genes found in the BGC of interest. 
