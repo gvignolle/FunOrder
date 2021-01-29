@@ -73,7 +73,7 @@ change in line 38 in funorder.sh ; funorder_fasta_only.sh and line 40 in funorde
 ```
 SOURCEDIR=~/funorder_proj/funorder_v1/ 
 ```
-to
+to (path to the funorder_v1 directory: e.g. ~/path/to/your/directory/)
 ```
 SOURCEDIR=~/path/to/your/directory/funorder_v1/
 ```
