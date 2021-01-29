@@ -3,7 +3,7 @@ FunOrder
 
 The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution – searches for co-evolutionary linked genes in a set of inputted genes. The functionality and applicability was tested with biosynthetic gene clusters (BGCs). The resulting information can be used to choose which genes of a gene cluster are most likely the core genes necessary for the biosynthesis of a secondary metabolite. The flexibility and adaptability of the core program allows the integration of any protein database and can thus be adapted for different phyla and research objectives. FunOrder might be used for the analysis of co-evolution on a whole proteome, enabling the genome wide detection of evolutionary linked genes, in the future. 
 
-The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution. FunOrder is copyright 2020 Gabriel A. Vignolle, Robert L. Mach, Astrid R. Mach-Aigner and Christian Derntl, and is released under the MIT License. If you find FunOrder useful to your work, please cite:
+The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution. FunOrder is copyright 2020 Gabriel A. Vignolle, Denise Schaffer, Robert L. Mach, Astrid R. Mach-Aigner and Christian Derntl, and is released under the MIT License. If you find FunOrder useful to your work, please cite:
 
 Vignolle, G. A.; Schaffer, D.; Mach, R. L.; Mach-Aigner, A. R.; Derntl, C. The Functional Order (FunOrder) tool: Identification of essential biosynthetic genes through computational molecular co-evolution. **deposited at** *BioRX*, **2021**. 
 
