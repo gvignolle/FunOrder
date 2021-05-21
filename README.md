@@ -21,11 +21,15 @@ Dependencies
 
 Third party programs
 
-* [Python](https://www.anaconda.com)
+* [Python 2](https://www.anaconda.com)
 * [Perl](https://www.perl.org/get.html)
 * [R](https://www.r-project.org/)
 * [Emboss](http://emboss.sourceforge.net/download/)
 * [RAxML](https://github.com/stamatak/standard-RAxML)
+
+Perl packages:
+
+* [Bio::SeqIO](https://metacpan.org/pod/Bio::SeqIO)
 
 Python packages:
 
@@ -55,11 +59,11 @@ pip install ete2
 Now install the R packages if not already installed.
 
 ```
-install.packages(readr) # at the R prompt
-install.packages(stats) # at the R prompt
-install.packages(gplots) # at the R prompt
-install.packages(car) # at the R prompt
-install.packages(mdatools) # at the R prompt
+install.packages('readr') # at the R prompt
+install.packages('stats') # at the R prompt
+install.packages('gplots') # at the R prompt
+install.packages('car') # at the R prompt
+install.packages('mdatools') # at the R prompt
 ```
 
 Now download FunOrder **funorder_v1.tar.xz** and unpack the archive.
@@ -69,7 +73,7 @@ tar -xf funorder_v1.tar.xz
 ```
 
 open the scripts funorder.sh ; funorder_fasta_only.sh ; funorder_server.sh ; funorder_server_fasta_only.sh
-change in line 38 in funorder.sh ; funorder_fasta_only.sh and line 40 in funorder_server.sh ; funorder_server_fasta_only.sh:
+change 'SOURCEDIR' value in line 43 in funorder.sh ; funorder_fasta_only.sh and line 45 in funorder_server.sh ; funorder_server_fasta_only.sh:
 
 ```
 SOURCEDIR=~/funorder_proj/funorder_v1/ 
@@ -84,18 +88,20 @@ Alternativeley you can call the FunOrder/pipeline directory directly.
 
 
 
-
 ### 1) using FunOrder in default mode with Genbank files
 ------------
 
+Run FunOrder from the folder containing the gbk file you want to analyze.
+(cd ~/path/to/your/gbk_files)
+
 ```
-sh ~/path/to/directory/funorder_v1/funorder.sh [Thread number] [gbk file] [outputdirectory] [database]
+sh ~/path/to/directory/funorder_v1/funorder.sh [Thread number] [gbk file] [absolute path to outputdirectory] [database]
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
-sh funorder.sh [Thread number] [gbk file] [outputdirectory] [database]
+sh funorder.sh [Thread number] [gbk file] [absolute path to outputdirectory] [database]
 ```
 
 following folders will be created in the chosen outputdirectory:
@@ -117,18 +123,20 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-
 ### 2) using FunOrder in default mode with fasta files
 ------------
 
+Run FunOrder from the folder containing the fasta file you want to analyze.
+(cd ~/path/to/your/fasta_files)
+
 ```
-sh ~/path/to/directory/funorder_v1/funorder_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
+sh ~/path/to/directory/funorder_v1/funorder_fasta_only.sh [Thread number] [fasta file] [absolute path to outputdirectory] [database]
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
-sh funorder_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
+sh funorder_fasta_only.sh [Thread number] [fasta file] [absolute path to outputdirectory] [database]
 ```
 
 following folders will be created in the chosen outputdirectory:
@@ -150,18 +158,20 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
-
 ### 3) using FunOrder in server mode with gbk files
 ------------
 
+Run FunOrder from the folder containing the gbk file you want to analyze.
+(cd ~/path/to/your/gbk_files)
+
 ```
-sh ~/path/to/directory/funorder_v1/funorder_server.sh [Thread number] [gbk file] [outputdirectory] [database]
+sh ~/path/to/directory/funorder_v1/funorder_server.sh [Thread number] [gbk file] [absolute path to outputdirectory] [database]
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
-sh funorder_server.sh [Thread number] [gbk file] [outputdirectory] [database]
+sh funorder_server.sh [Thread number] [gbk file] [absolute path to outputdirectory] [database]
 ```
 
 following folders will be created in the chosen outputdirectory:
@@ -181,19 +191,37 @@ strict_distance.matrix       | matrix of the strict distance
 evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
+#### Example usage for generic antiSMASH output:
+
+within the antiSMASH output-folder create a new directory "funorder_output"
+
+```
+mkdir funorder_output
+```
+
+then from within the antiSMASH output-folder run following command:
+
+```
+for file in *cluster*.gbk; do echo $file; sh ~/path/to/directory/funorder_v1/funorder_server.sh [Thread number] $file [absolute path to "funorder_output" directory] [database] ; done
+```
+This will perform a FunOrder analysis for each cluster predicted by antiSMASH.
+
 
 
 ### 4) using FunOrder in server mode with fasta files
 ------------
 
+Run FunOrder from the folder containing the fasta file you want to analyze.
+(cd ~/path/to/your/fasta_files)
+
 ```
-sh ~/path/to/directory/funorder_v1/funorder_server_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
+sh ~/path/to/directory/funorder_v1/funorder_server_fasta_only.sh [Thread number] [fasta file] [absolute path to outputdirectory] [database]
 ```
 
 or if you added the FunOrder/pipeline directory to your $PATH environmental variable.
 
 ```
-sh funorder_server_fasta_only.sh [Thread number] [fasta file] [outputdirectory] [database]
+sh funorder_server_fasta_only.sh [Thread number] [fasta file] [absolute path to outputdirectory] [database]
 ```
 
 following folders will be created in the chosen outputdirectory:
