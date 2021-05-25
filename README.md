@@ -26,6 +26,7 @@ Third party programs
 * [R](https://www.r-project.org/)
 * [Emboss](http://emboss.sourceforge.net/download/)
 * [RAxML](https://github.com/stamatak/standard-RAxML)
+* [ClustalW](http://www.clustal.org/clustal2/)
 
 Perl packages:
 
