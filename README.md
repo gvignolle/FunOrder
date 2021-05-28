@@ -67,7 +67,7 @@ install.packages('car') # at the R prompt
 install.packages('mdatools') # at the R prompt
 ```
 
-Now download FunOrder **funorder_v1.tar.xz** and unpack the archive.
+Now download the newest version of FunOrder **funorder_vxx.tar.xz** and unpack the archive.
 
 ```
 tar -xf funorder_v1.tar.xz
