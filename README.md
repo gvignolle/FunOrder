@@ -19,7 +19,7 @@ The three distance matrices are first visualized as heatmaps with a dendrogram c
 Dependencies
 ------------
 
-Third party programs
+Third party programs (include Emboss, RAxML and ClustalW in your $PATH)
 
 * [Python 2](https://www.anaconda.com)
 * [Perl](https://www.perl.org/get.html)
@@ -50,7 +50,7 @@ Installation
 These instructions should work on [Debian](https://www.debian.org)-based linux distributions such as [Ubuntu](https://www.ubuntu.com).
 
 First we install the EMBOSS package according to the instructions.
-Then we install RAxML according to the instructions.
+Then we install RAxML and ClustalW according to the instructions and place the executables in your $PATH.
 After R, Perl and Python is installed, install the ete2 package.
 
 ```
