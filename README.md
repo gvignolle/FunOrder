@@ -43,7 +43,6 @@ R packages:
 * gplots
 * car
 * mdatools
-* randtests
 
 Installation
 ------------
