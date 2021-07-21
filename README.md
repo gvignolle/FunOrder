@@ -1,3 +1,4 @@
+
 FunOrder
 =========
 
@@ -5,7 +6,7 @@ The Functional Order (FunOrder) tool - Identification of essential biosynthetic 
 
 The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution. FunOrder is copyright 2020 Gabriel A. Vignolle, Denise Schaffer, Robert L. Mach, Astrid R. Mach-Aigner and Christian Derntl, and is released under the MIT License. If you find FunOrder useful to your work, please cite:
 
-https://zenodo.org/record/4778487 for the code or 
+https://zenodo.org/record/4778487 for the code or
 
 **The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution** Gabriel A Vignolle, Denise Schaffer, Robert L Mach, Astrid R Mach-Aigner, Christian Derntl. **bioRxiv** 2021.01.29.428829; doi: https://doi.org/10.1101/2021.01.29.428829
 
@@ -19,14 +20,13 @@ The three distance matrices are first visualized as heatmaps with a dendrogram c
 Dependencies
 ------------
 
-Third party programs (include Emboss, RAxML and ClustalW in your $PATH)
+Third party programs
 
 * [Python 2](https://www.anaconda.com)
 * [Perl](https://www.perl.org/get.html)
 * [R](https://www.r-project.org/)
 * [Emboss](http://emboss.sourceforge.net/download/)
 * [RAxML](https://github.com/stamatak/standard-RAxML)
-* [ClustalW](http://www.clustal.org/clustal2/)
 
 Perl packages:
 
@@ -43,6 +43,7 @@ R packages:
 * gplots
 * car
 * mdatools
+* randtests
 
 Installation
 ------------
@@ -50,7 +51,7 @@ Installation
 These instructions should work on [Debian](https://www.debian.org)-based linux distributions such as [Ubuntu](https://www.ubuntu.com).
 
 First we install the EMBOSS package according to the instructions.
-Then we install RAxML and ClustalW according to the instructions and place the executables in your $PATH.
+Then we install RAxML according to the instructions.
 After R, Perl and Python is installed, install the ete2 package.
 
 ```
@@ -67,7 +68,7 @@ install.packages('car') # at the R prompt
 install.packages('mdatools') # at the R prompt
 ```
 
-Now download the newest version of FunOrder **funorder_vxx.tar.xz** and unpack the archive.
+Now download FunOrder **funorder_v1.tar.xz** and unpack the archive.
 
 ```
 tar -xf funorder_v1.tar.xz
@@ -86,6 +87,7 @@ SOURCEDIR=~/path/to/your/directory/funorder_v1/
 
 You can now add the FunOrder/pipeline directory to your $PATH environmental variable.
 Alternativeley you can call the FunOrder/pipeline directory directly.
+
 
 
 
@@ -124,6 +126,7 @@ evol_distance.matrix         | matrix of the evolutionary [speciation] distance
 
 
 
+
 ### 2) using FunOrder in default mode with fasta files
 ------------
 
@@ -156,6 +159,7 @@ File                         | Description
 Rplot.pdf                    | PDF file with the Analyze.R output as described in our publication
 strict_distance.matrix       | matrix of the strict distance
 evol_distance.matrix         | matrix of the evolutionary [speciation] distance
+
 
 
 
@@ -205,9 +209,8 @@ then from within the antiSMASH output-folder run following command:
 ```
 for file in *cluster*.gbk; do echo $file; sh ~/path/to/directory/funorder_v1/funorder_server.sh [Thread number] $file [absolute path to "funorder_output" directory] [database] ; done
 ```
+
 This will perform a FunOrder analysis for each cluster predicted by antiSMASH.
-
-
 
 ### 4) using FunOrder in server mode with fasta files
 ------------
@@ -240,5 +243,4 @@ File                         | Description
 Rplot.pdf                    | PDF file with the Analyze.R output as described in our publication
 strict_distance.matrix       | matrix of the strict distance
 evol_distance.matrix         | matrix of the evolutionary [speciation] distance
-
 
