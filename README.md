@@ -8,6 +8,8 @@ The Functional Order (FunOrder) tool - Identification of essential biosynthetic 
 
 https://zenodo.org/record/5118984 and  DOI: 10.5281/zenodo.5118984 for the code and
 
+Vignolle GA, Schaffer D, Zehetner L, Mach RL, Mach-Aigner AR, Derntl C (2021) **FunOrder: A robust and semi-automated method for the identification of essential biosynthetic genes through computational molecular co-evolution.** PLoS Comput Biol 17(9): e1009372. doi: https://doi.org/10.1371/journal.pcbi.1009372
+
 **The Functional Order (FunOrder) tool - Identification of essential biosynthetic genes through computational molecular co-evolution** Gabriel A Vignolle, Denise Schaffer, Robert L Mach, Astrid R Mach-Aigner, Christian Derntl. **bioRxiv** 2021.01.29.428829; doi: https://doi.org/10.1101/2021.01.29.428829
 
 The software input files are biosynthetic gene clusters (BGC) with gene translations in genbank file format or fasta format, that contain the amino acid sequences of all the genes found in the BGC of interest. 
