@@ -8,7 +8,7 @@ The Functional Order (FunOrder) tool - Identification of essential biosynthetic 
 
 **FunOrder 2.0 – a fully automated method for the identification of co-evolved genes**
 
-https://zenodo.org/record/5118984 and DOI: 10.5281/zenodo.5118984 for the code and
+https://zenodo.org/record/5827722 and DOI: 10.5281/zenodo.5827722 for the code and
 
 Vignolle GA, Schaffer D, Zehetner L, Mach RL, Mach-Aigner AR, Derntl C (2021) **FunOrder: A robust and semi-automated method for the identification of essential biosynthetic genes through computational molecular co-evolution.** PLoS Comput Biol 17(9): e1009372. doi: https://doi.org/10.1371/journal.pcbi.1009372
 
